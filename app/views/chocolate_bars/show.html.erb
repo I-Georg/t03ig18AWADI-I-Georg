@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Bar name:</strong>
+  <%= @chocolate_bar.bar_name %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @chocolate_bar.price %>
+</p>
+
+<p>
+  <strong>Quantity:</strong>
+  <%= @chocolate_bar.quantity %>
+</p>
+
+<p>
+  <strong>Compamny maker:</strong>
+  <%= @chocolate_bar.compamny_maker %>
+</p>
+
+<p>
+  <strong>Review date:</strong>
+  <%= @chocolate_bar.review_date %>
+</p>
+
+<p>
+  <strong>Cocoa percent:</strong>
+  <%= @chocolate_bar.cocoa_percent %>
+</p>
+
+<p>
+  <strong>Bean origin:</strong>
+  <%= @chocolate_bar.bean_origin_id %>
+</p>
+
+<%= link_to 'Edit', edit_chocolate_bar_path(@chocolate_bar) %> |
+<%= link_to 'Back', chocolate_bars_path %>
