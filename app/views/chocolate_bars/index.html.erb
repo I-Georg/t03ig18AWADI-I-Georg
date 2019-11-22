@@ -7,11 +7,9 @@
     <tr>
       <th>Bar name</th>
       <th>Price</th>
-      <th>Quantity</th>
-      <th>Compamny maker</th>
+      <th>Company maker</th>
       <th>Review date</th>
       <th>Cocoa percent</th>
-      <th>Bean origin</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -21,11 +19,9 @@
       <tr>
         <td><%= chocolate_bar.bar_name %></td>
         <td><%= chocolate_bar.price %></td>
-        <td><%= chocolate_bar.quantity %></td>
-        <td><%= chocolate_bar.compamny_maker %></td>
+        <td><%= chocolate_bar.company_maker %></td>
         <td><%= chocolate_bar.review_date %></td>
         <td><%= chocolate_bar.cocoa_percent %></td>
-        <td><%= chocolate_bar.bean_origin_id %></td>
         <td><%= link_to 'Show', chocolate_bar %></td>
         <td><%= link_to 'Edit', edit_chocolate_bar_path(chocolate_bar) %></td>
         <td><%= link_to 'Destroy', chocolate_bar, method: :delete, data: { confirm: 'Are you sure?' } %></td>

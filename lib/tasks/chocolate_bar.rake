@@ -3,31 +3,22 @@ namespace :chocolate_bar do
   desc "seed chocolate_bar table"
   task seed_bars: :environment do
 ChocolateBar.destroy_all
-bean = Country.all
-8.times do |x|
-bean.each do |bea|
-@bea = Country.all.pluck(:id)
 
-end 
-end
-@bea.each do |x|
-x=@y
-end
+
+#@bea.each do |x|
+#puts x
+#end
+
 CSV.foreach(Rails.root.join('.', 'lib', 'assets', 'flavorsofcacao.csv'), :headers =>true) do |row|
-puts row.inspect
-
+#puts row.inspect
 ChocolateBar.create!(
-bar_name: Faker::Name.first_name , 
+bar_name: Faker::Name.first_name, 
 price: Faker::Number.decimal(l_digits: 2),
-quantity: Faker::Number.decimal_part(digits: 2),
-compamny_maker: row[0].to_s,
+company_maker: row[0].to_s,
 review_date: row[3].to_i,
-cocoa_percent: row[4].to_i,
-
-bean_origin_id: @y.to_i
+cocoa_percent: row[4].to_i
 
 )
-
 
 end
 

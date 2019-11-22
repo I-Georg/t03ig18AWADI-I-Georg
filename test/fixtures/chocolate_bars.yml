@@ -3,17 +3,13 @@
 one:
   bar_name: MyText
   price: 9.99
-  quantity: 9.99
-  compamny_maker: 1
-  review_date: 2019-11-09 15:43:24
+  company_maker: MyText
+  review_date: 1
   cocoa_percent: 1
-  bean_origin: MyText
 
 two:
   bar_name: MyText
   price: 9.99
-  quantity: 9.99
-  compamny_maker: 1
-  review_date: 2019-11-09 15:43:24
+  company_maker: MyText
+  review_date: 1
   cocoa_percent: 1
-  bean_origin: MyText

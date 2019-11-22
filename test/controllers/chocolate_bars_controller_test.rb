@@ -17,7 +17,7 @@ class ChocolateBarsControllerTest < ActionDispatch::IntegrationTest
 
   test "should create chocolate_bar" do
     assert_difference('ChocolateBar.count') do
-      post chocolate_bars_url, params: { chocolate_bar: { bar_name: @chocolate_bar.bar_name, bean_origin: @chocolate_bar.bean_origin, cocoa_percent: @chocolate_bar.cocoa_percent, compamny_maker: @chocolate_bar.compamny_maker, price: @chocolate_bar.price, quantity: @chocolate_bar.quantity, review_date: @chocolate_bar.review_date } }
+      post chocolate_bars_url, params: { chocolate_bar: { bar_name: @chocolate_bar.bar_name, cocoa_percent: @chocolate_bar.cocoa_percent, company_maker: @chocolate_bar.company_maker, price: @chocolate_bar.price, review_date: @chocolate_bar.review_date } }
     end
 
     assert_redirected_to chocolate_bar_url(ChocolateBar.last)
@@ -34,7 +34,7 @@ class ChocolateBarsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update chocolate_bar" do
-    patch chocolate_bar_url(@chocolate_bar), params: { chocolate_bar: { bar_name: @chocolate_bar.bar_name, bean_origin: @chocolate_bar.bean_origin, cocoa_percent: @chocolate_bar.cocoa_percent, compamny_maker: @chocolate_bar.compamny_maker, price: @chocolate_bar.price, quantity: @chocolate_bar.quantity, review_date: @chocolate_bar.review_date } }
+    patch chocolate_bar_url(@chocolate_bar), params: { chocolate_bar: { bar_name: @chocolate_bar.bar_name, cocoa_percent: @chocolate_bar.cocoa_percent, company_maker: @chocolate_bar.company_maker, price: @chocolate_bar.price, review_date: @chocolate_bar.review_date } }
     assert_redirected_to chocolate_bar_url(@chocolate_bar)
   end
 

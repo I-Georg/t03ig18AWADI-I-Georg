@@ -10,19 +10,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_11_09_154344) do
+ActiveRecord::Schema.define(version: 2019_11_22_145331) do
 
   create_table "chocolate_bars", force: :cascade do |t|
     t.text "bar_name"
     t.decimal "price"
-    t.decimal "quantity"
-    t.integer "compamny_maker"
-    t.datetime "review_date"
+    t.text "company_maker"
+    t.integer "review_date"
     t.integer "cocoa_percent"
-    t.integer "bean_origin_id"
+    t.integer "country_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.index ["bean_origin_id"], name: "index_chocolate_bars_on_bean_origin_id"
+    t.index ["country_id"], name: "index_chocolate_bars_on_country_id"
   end
 
   create_table "countries", force: :cascade do |t|
@@ -33,5 +32,5 @@ ActiveRecord::Schema.define(version: 2019_11_09_154344) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
-  add_foreign_key "chocolate_bars", "countries", column: "bean_origin_id"
+  add_foreign_key "chocolate_bars", "countries"
 end

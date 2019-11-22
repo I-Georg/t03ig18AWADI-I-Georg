@@ -15,11 +15,9 @@ class ChocolateBarsTest < ApplicationSystemTestCase
     click_on "New Chocolate Bar"
 
     fill_in "Bar name", with: @chocolate_bar.bar_name
-    fill_in "Bean origin", with: @chocolate_bar.bean_origin
     fill_in "Cocoa percent", with: @chocolate_bar.cocoa_percent
-    fill_in "Compamny maker", with: @chocolate_bar.compamny_maker
+    fill_in "Company maker", with: @chocolate_bar.company_maker
     fill_in "Price", with: @chocolate_bar.price
-    fill_in "Quantity", with: @chocolate_bar.quantity
     fill_in "Review date", with: @chocolate_bar.review_date
     click_on "Create Chocolate bar"
 
@@ -32,11 +30,9 @@ class ChocolateBarsTest < ApplicationSystemTestCase
     click_on "Edit", match: :first
 
     fill_in "Bar name", with: @chocolate_bar.bar_name
-    fill_in "Bean origin", with: @chocolate_bar.bean_origin
     fill_in "Cocoa percent", with: @chocolate_bar.cocoa_percent
-    fill_in "Compamny maker", with: @chocolate_bar.compamny_maker
+    fill_in "Company maker", with: @chocolate_bar.company_maker
     fill_in "Price", with: @chocolate_bar.price
-    fill_in "Quantity", with: @chocolate_bar.quantity
     fill_in "Review date", with: @chocolate_bar.review_date
     click_on "Update Chocolate bar"
 
