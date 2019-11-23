@@ -1,0 +1,19 @@
+<h1>Chocolate Shop</h1>
+<h2>Chocolate Bars: enjoy the moment</h2>
+<ul class="cshop">
+<% @chocolate_bars.each do |bar| %>
+<li>
+<ul class="list">
+<h3><%= bar.bar_name %></h2>
+<p>
+
+</p>
+<div class="price">
+<%= bar.price %>
+</div>
+<%= bar.company_maker %>
+<%= bar.review_date %>
+<%= bar.cocoa_percent %>
+</li>
+<% end %>
+</ul>

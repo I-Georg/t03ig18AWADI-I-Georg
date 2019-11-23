@@ -12,7 +12,7 @@ ChocolateBar.destroy_all
 CSV.foreach(Rails.root.join('.', 'lib', 'assets', 'flavorsofcacao.csv'), :headers =>true) do |row|
 #puts row.inspect
 ChocolateBar.create!(
-bar_name: Faker::Name.first_name, 
+bar_name: Faker::Name.unique.first_name, 
 price: Faker::Number.decimal(l_digits: 2),
 company_maker: row[0].to_s,
 review_date: row[3].to_i,
