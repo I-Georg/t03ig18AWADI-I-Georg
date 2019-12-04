@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_11_22_145331) do
+ActiveRecord::Schema.define(version: 2019_11_25_103435) do
 
   create_table "chocolate_bars", force: :cascade do |t|
     t.text "bar_name"
@@ -32,5 +32,21 @@ ActiveRecord::Schema.define(version: 2019_11_22_145331) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
+  create_table "itemfor_carts", force: :cascade do |t|
+    t.integer "chocolate_bar_id", null: false
+    t.integer "cart_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["cart_id"], name: "index_itemfor_carts_on_cart_id"
+    t.index ["chocolate_bar_id"], name: "index_itemfor_carts_on_chocolate_bar_id"
+  end
+
+  create_table "product_carts", force: :cascade do |t|
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
   add_foreign_key "chocolate_bars", "countries"
+  add_foreign_key "itemfor_carts", "carts"
+  add_foreign_key "itemfor_carts", "chocolate_bars"
 end

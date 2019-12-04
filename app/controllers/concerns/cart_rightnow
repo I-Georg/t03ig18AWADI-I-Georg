@@ -1,0 +1,13 @@
+#source Rails5 book - creating a cart,looking for a card with id from session
+module CartNow
+
+private
+
+
+    def build_cart
+     @cart = Cart.find(session[:cart_id])
+     rescue ActiveRecord::RecordNotFound
+     @cart = Cart.create
+      session[:cart_id] = @cart.id
+   end
+end

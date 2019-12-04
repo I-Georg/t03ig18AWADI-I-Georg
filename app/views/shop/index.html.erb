@@ -1,7 +1,9 @@
 <h1>Chocolate Shop</h1>
 <h2>Chocolate Bars: enjoy the moment</h2>
 <ul class="cshop">
+<%cache @chocolate_bars do%>
 <% @chocolate_bars.each do |bar| %>
+<% cache bar do %>
 <li>
 <ul class="list">
 <h3><%= bar.bar_name %></h2>
@@ -9,11 +11,14 @@
 
 </p>
 <div class="price">
-<%= bar.price %>
+<%= number_to_currency(bar.price) %>
+<%= button_to 'Add to Cart', itemfor_carts_path(chocolate_bar_id: bar) %>
 </div>
 <%= bar.company_maker %>
 <%= bar.review_date %>
 <%= bar.cocoa_percent %>
 </li>
+<% end %>
+<% end %>
 <% end %>
 </ul>
