@@ -1,6 +1,7 @@
 <p id="notice"><%= notice %></p>
-<%@product_cart.itemfor_cart.each do |product|%>
+<%@cart.itemfor_cart.each do |product|%>
 <%=product.chocolate_bar.bar_name%>
+<%=product.quantity%> &times;%>
 <%end%>
 <%= link_to 'Edit', edit_product_cart_path(@product_cart) %> |
 <%= link_to 'Back', product_carts_path %>

@@ -31,7 +31,7 @@ class ItemforCartsController < ApplicationController
   def create
     
     chocolate_bar = ChocolateBar.find(params[:chocolate_bar_id])
-    @itemfor_cart = @cart.itemfor_cart.build(chocolate_bar: chocolate_bar)
+    @itemfor_cart = @cart.add_chocolate_bar(chocolate_bar)
     respond_to do |format|
       if @itemfor_cart.save
         format.html { redirect_to @itemfor_cart.cart, notice: 'Itemfor cart was successfully created.' }
