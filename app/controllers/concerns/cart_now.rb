@@ -5,9 +5,11 @@ private
 
 
     def build_cart
-     @cart = Cart.find(session[:cart_id])
+     @cart = ProductCart.find(session[:cart_id])
      rescue ActiveRecord::RecordNotFound
-     @cart = Cart.create
+     @cart = ProductCart.create
       session[:cart_id] = @cart.id
    end
 end
+
+
