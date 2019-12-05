@@ -12,4 +12,18 @@
   </thead>
 
   <tbody>
-   
+  <% @itemfor_carts.each do |itemfor_cart| %>
+      <tr>
+        <td><%= itemfor_cart.chocolate_bar_id %></td>
+        <td><%= itemfor_cart.cart_id %></td>
+        <td><%= link_to 'Show', itemfor_cart %></td>
+        <td><%= link_to 'Edit', edit_itemfor_cart_path(itemfor_cart) %></td>
+        <td><%= link_to 'Destroy', itemfor_cart, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Itemfor Cart', new_itemfor_cart_path %>

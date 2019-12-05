@@ -29,7 +29,7 @@ class ItemforCartsController < ApplicationController
   # POST /itemfor_carts
   # POST /itemfor_carts.json
   def create
-    @itemfor_cart = ItemforCart.new(itemfor_cart_params)
+    
     chocolate_bar = ChocolateBar.find(params[:chocolate_bar_id])
     @itemfor_cart = @cart.itemfor_cart.build(chocolate_bar: chocolate_bar)
     respond_to do |format|
@@ -49,7 +49,7 @@ class ItemforCartsController < ApplicationController
   def update
     respond_to do |format|
       if @itemfor_cart.update(itemfor_cart_params)
-        format.html { redirect_to @itemfor_cart, notice: 'Itemfor cart was successfully updated.' }
+        format.html { redirect_to @itemfor_cart.cart, notice: 'Itemfor cart was successfully updated.' }
         format.json { render :show, status: :ok, location: @itemfor_cart }
       else
         format.html { render :edit }
