@@ -28,7 +28,7 @@ class LineItemsController < ApplicationController
   def create
     #@line_item = LineItem.new(line_item_params)
     chocolate_bar = ChocolateBar.find(params[:chocolate_bar_id])
-    @line_item = @cart.line_items.build(chocolate_bar: chocolate_bar)
+    @line_item = @cart.add_chocolate_bar(chocolate_bar)
     respond_to do |format|
       if @line_item.save
         format.html { redirect_to @line_item.cart, notice: 'Line item was successfully created.' }

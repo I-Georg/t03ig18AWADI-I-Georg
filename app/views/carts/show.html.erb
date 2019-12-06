@@ -1,11 +1,13 @@
 
 
-<aside id="notice"><%= notice %></aside>
+
 
 <h2> Shopping Cart</h2>
 <ul>
 <% @cart.line_items.each do |item| %>
-<li><%= item.chocolate_bar.bar_name %></li>
+
+
+<li><%= item.quantity %> &times; <%= item.chocolate_bar.bar_name %></li>
 <li><%= item.chocolate_bar.price %></li>
 <% end %>
 </ul>
