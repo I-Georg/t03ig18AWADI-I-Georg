@@ -6,6 +6,7 @@
 <ul>
 <% @cart.line_items.each do |item| %>
 <li><%= item.chocolate_bar.bar_name %></li>
+<li><%= item.chocolate_bar.price %></li>
 <% end %>
 </ul>
 <%= link_to 'Edit', edit_cart_path(@cart) %> |
