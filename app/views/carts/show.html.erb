@@ -1,0 +1,14 @@
+
+
+<aside id="notice"><%= notice %></aside>
+
+<h2> Shopping Cart</h2>
+<ul>
+<% @cart.line_items.each do |item| %>
+<li><%= item.chocolate_bar.bar_name %></li>
+<% end %>
+</ul>
+<%= link_to 'Edit', edit_cart_path(@cart) %> |
+<%= link_to 'Back', carts_path %>
+
+
