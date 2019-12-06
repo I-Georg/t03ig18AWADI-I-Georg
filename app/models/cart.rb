@@ -2,6 +2,7 @@ class Cart < ApplicationRecord
 has_many :line_items, dependent: :destroy
 
 
+
 #source Rails5 book
 def add_chocolate_bar(chocolate_bar)
 current_item = line_items.find_by(chocolate_bar_id: chocolate_bar.id)

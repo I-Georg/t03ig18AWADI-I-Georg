@@ -28,11 +28,15 @@ before_action :set_order, only: [:show, :edit, :update, :destroy]
   # POST /orders
   # POST /orders.json
   def create
+#source Rails5 book
     @order = Order.new(order_params)
-
+    @order.add_line_items_from_shoppingcart(@cart)
+    #@cart = Cart.find(:id)
     respond_to do |format|
       if @order.save
-        format.html { redirect_to @order, notice: 'Order was successfully created.' }
+         Cart.destroy(session[:cart_id])
+         session[:cart_id] = nil
+        format.html { redirect_to shop_index_url, notice: 'Your order was sent. Thank you.' }  
         format.json { render :show, status: :created, location: @order }
       else
         format.html { render :new }
