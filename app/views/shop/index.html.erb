@@ -2,29 +2,52 @@
 <h2>Chocolate Bars: enjoy the moment</h2>
 
 <ul class="cshop">
+<!-- https://github.com/mislav/will_paginate/ -->
 <div class="flickr_pagination">
 <%= will_paginate @chocolate_bars %>
 </div>
+
+<div class="row">
+
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100">
+              <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+              <div class="card-body">
+                <h4 class="card-title">
+                  <a href="#">Item One</a>
+                </h4>
+                <h5>$24.99</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+              </div>
+            </div>
+          </div>
+<!-- Rails5 book -->
 <% cache @chocolate_bars do %>
 <% @chocolate_bars.each do |bar| %>
 <% cache bar do %>
-<li>
-<ul class="list">
-<h3><%= bar.bar_name %></h2>
-<p>
-
-</p>
-<div class="price">
-<%= bar.price %>
-</div>
-<%= bar.company_maker %>
-<%= bar.review_date %>
-<%= bar.cocoa_percent %>
+<!-- source idea https://github.com/BlackrockDigital/startbootstrap-shop-homepage/blob/master/index.html -->
+<div class="col-lg-4 col-md-6 mb-4">
+<div class="card h-45">
+<div class="card-body">
+<h4 class="card-title"> </h4>
+<h3><%= bar.bar_name %></h3>
+<p>$<%= bar.price %></p>
+<p><%= bar.company_maker %></p>
+<p><%= bar.review_date %></p>
+<p><%= bar.cocoa_percent %></p>
 <%= button_to 'Add to Cart', line_items_path(chocolate_bar_id: bar) %>
-</li>
+</div>
+</div>
+</div>
 <% end %>
 <% end %>
 <% end %>
+<!-- https://github.com/mislav/will_paginate/ -->
+<!-- http://mislav.github.io/will_paginate/ -->
+
 <div class="flickr_pagination">
 <%= will_paginate @chocolate_bars %>
 </div>
