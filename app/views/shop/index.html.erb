@@ -1,6 +1,10 @@
 <h1>Chocolate Shop</h1>
 <h2>Chocolate Bars: enjoy the moment</h2>
+
 <ul class="cshop">
+<div class="flickr_pagination">
+<%= will_paginate @chocolate_bars %>
+</div>
 <% cache @chocolate_bars do %>
 <% @chocolate_bars.each do |bar| %>
 <% cache bar do %>
@@ -21,4 +25,7 @@
 <% end %>
 <% end %>
 <% end %>
+<div class="flickr_pagination">
+<%= will_paginate @chocolate_bars %>
+</div>
 </ul>
