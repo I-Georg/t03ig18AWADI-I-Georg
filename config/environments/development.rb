@@ -35,6 +35,20 @@ Rails.application.configure do
   config.action_mailer.raise_delivery_errors = false
 
   config.action_mailer.perform_caching = false
+#source https://dev.to/morinoko/sending-emails-in-rails-with-action-mailer-and-gmail-35g4
+config.action_mailer.delivery_method = :smtp
+host = 'localhost:3000' #replace with your own url
+config.action_mailer.default_url_options = { :host => 'localhost:3000', protocol: 'http' }
+
+# SMTP settings for gmail
+config.action_mailer.smtp_settings = {
+  :address              => "smtp.gmail.com",
+  :port                 => 587,
+  :user_name            => "assignmentshopchocolate@gmail.com",
+  :password             => "ChocolateBar1",
+  :authentication       => "plain",
+  :enable_starttls_auto => true
+}
 
   # Print deprecation notices to the Rails logger.
   config.active_support.deprecation = :log

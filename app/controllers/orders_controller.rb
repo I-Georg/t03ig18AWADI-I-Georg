@@ -36,7 +36,8 @@ before_action :set_order, only: [:show, :edit, :update, :destroy]
       if @order.save
          Cart.destroy(session[:cart_id])
          session[:cart_id] = nil
-        format.html { redirect_to shop_index_url, notice: 'Your order was sent. Thank you.' }  
+        OrderMailer.received(@order).deliver_later
+        format.html { redirect_to shop_index_url, notice: 'Your order was sent. Thank you.We will sent you an email soon' }  
         format.json { render :show, status: :created, location: @order }
       else
         format.html { render :new }
