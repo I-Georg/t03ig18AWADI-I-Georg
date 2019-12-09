@@ -1,22 +1,38 @@
 <!-- https://womanonrails.com/leaflet -->
-<%= @displaylat%>
+
+<!--https://stackoverflow.com/questions/17520177/passing-ruby-variables-to-javascript-ruby-on-rails-->
+
   <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css" />
 <div id="map-holder">
 <div class="container fill">
 <div id="mapid"> </div>
 </div>
 </div>
+
 <script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
 
 <script>
 //source https://leafletjs.com/
 //https://womanonrails.com/leaflet
 
-var lmap = L.map('mapid').setView([51.505, -0.09],5);
+var map = L.map('mapid').setView([51.505, -0.09],5);
+
  L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
       attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>',
-      maxZoom: 18
-  }).addTo(lmap)
+      maxZoom: 10
+  }).addTo(map)
+
+
+
+<%@coordinate.each do |x|%>
+<%=@x=x.latitude%>
+<%=@y=x.longitude%>
+var x= '<%=@x%>';
+var y = '<%= @y%>';
+marker = L.marker(x,y).addTo(map);
+<%end%>
+
+
 
 </script>
 

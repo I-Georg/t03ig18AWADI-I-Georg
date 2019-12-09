@@ -23,6 +23,9 @@ ActiveRecord::Schema.define(version: 2019_12_06_214933) do
     t.text "company_maker"
     t.integer "review_date"
     t.integer "cocoa_percent"
+    t.text "country_name"
+    t.decimal "latitude"
+    t.decimal "longitude"
     t.integer "country_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
@@ -35,16 +38,6 @@ ActiveRecord::Schema.define(version: 2019_12_06_214933) do
     t.decimal "longitude"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-  end
-
-  create_table "itemfor_carts", force: :cascade do |t|
-    t.integer "chocolate_bar_id", null: false
-    t.integer "cart_id", null: false
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-    t.integer "quantity", default: 1
-    t.index ["cart_id"], name: "index_itemfor_carts_on_cart_id"
-    t.index ["chocolate_bar_id"], name: "index_itemfor_carts_on_chocolate_bar_id"
   end
 
   create_table "line_items", force: :cascade do |t|
@@ -68,14 +61,7 @@ ActiveRecord::Schema.define(version: 2019_12_06_214933) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
-  create_table "product_carts", force: :cascade do |t|
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-  end
-
   add_foreign_key "chocolate_bars", "countries"
-  add_foreign_key "itemfor_carts", "carts"
-  add_foreign_key "itemfor_carts", "chocolate_bars"
   add_foreign_key "line_items", "carts"
   add_foreign_key "line_items", "chocolate_bars"
   add_foreign_key "line_items", "orders"

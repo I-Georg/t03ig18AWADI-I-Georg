@@ -6,6 +6,9 @@ class CreateChocolateBars < ActiveRecord::Migration[6.0]
       t.text :company_maker
       t.integer :review_date
       t.integer :cocoa_percent
+      t.text  :country_name
+      t.decimal :latitude
+      t.decimal  :longitude  
       t.belongs_to :country, null: true, foreign_key: true
 
       t.timestamps

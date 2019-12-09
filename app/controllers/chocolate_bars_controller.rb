@@ -69,6 +69,6 @@ class ChocolateBarsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def chocolate_bar_params
-      params.require(:chocolate_bar).permit(:bar_name, :price, :company_maker, :review_date, :cocoa_percent)
+      params.require(:chocolate_bar).permit(:bar_name, :price, :company_maker, :review_date, :cocoa_percent, :country_name, :latitude, :longitude)
     end
 end
