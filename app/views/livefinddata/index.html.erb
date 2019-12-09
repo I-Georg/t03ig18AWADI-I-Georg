@@ -1,0 +1,32 @@
+<!-- https://rapidapi.com/blog/how-to-use-an-api-with-ruby/ -->
+<!--https://rapidapi.com/natkapral/api/countries-cities?endpoint=apiendpoint_3d9d1d60-8bda-47d4-a003-2d46c7277b09-->
+
+<%= form_tag livedata_path, method: "get" do %>
+  <%= label_tag(:input, "Search for:") %>
+  <%= text_field_tag :input, params[:input] %>
+<% end %>
+
+<%if @response%>
+Capital<%=@response.body['capital']%><br>
+Area size<%=@response.body['area_size']%><br>
+Continent name<%=@response.body['continent']['name']%><br>
+Currency code<%=@response.body['currency']['code']%><br>
+Phone code<%=@response.body['phone_code']%><br>
+Timezone and time<%=@response.body['timezone']['time']%><br>
+Timezone<%=@response.body['timezone']['timezone']%><br>
+<%end%>
+<table class="table table-striped">
+  <thead>
+    <tr>
+<%@code.each do |c|%>
+  <tbody>
+    <tr>
+      <th scope="row"><%=c.countrycode%></th>
+     
+    </tr>
+<%end%>
+  </tbody>
+</table>
+
+
+

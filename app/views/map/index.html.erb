@@ -15,11 +15,11 @@
 //source https://leafletjs.com/
 //https://womanonrails.com/leaflet
 
-var map = L.map('mapid').setView([51.505, -0.09],5);
+var map = L.map('mapid').setView([51.505, -0.09],2);
 
  L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
       attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>',
-      maxZoom: 10
+      maxZoom: 18
   }).addTo(map)
 
 
@@ -30,6 +30,8 @@ var map = L.map('mapid').setView([51.505, -0.09],5);
 var x= '<%=@x%>';
 var y = '<%= @y%>';
 marker = L.marker(x,y).addTo(map);
+marker.bindPopup("<b>Hello world!</b><br>I am a popup.").openPopup();
+
 <%end%>
 
 

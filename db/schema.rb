@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_12_06_214933) do
+ActiveRecord::Schema.define(version: 2019_12_09_141559) do
 
   create_table "carts", force: :cascade do |t|
     t.datetime "created_at", precision: 6, null: false
@@ -36,6 +36,12 @@ ActiveRecord::Schema.define(version: 2019_12_06_214933) do
     t.text "country_name"
     t.decimal "lattitude"
     t.decimal "longitude"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "country_codes", force: :cascade do |t|
+    t.string "countrycode"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

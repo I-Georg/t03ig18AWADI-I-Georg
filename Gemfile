@@ -21,7 +21,9 @@ gem 'jbuilder', '~> 2.7'
 gem 'will_paginate', '~> 3.1.0'
 #for maps - https://github.com/axyjo/leaflet-rails
 gem 'leaflet-rails'
-
+#for fetching network data https://rapidapi.com/blog/how-to-use-an-api-with-ruby/
+gem 'excon'
+gem 'unirest'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use Active Model has_secure_password
