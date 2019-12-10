@@ -1,11 +1,26 @@
 <h1>Chocolate Shop</h1>
 <h2>Chocolate Bars: enjoy the moment</h2>
 
-<ul class="cshop">
-<!-- https://github.com/mislav/will_paginate/ -->
+<form action="/search" method="GET">
+  <input type="text" name="s" >
+  <input type="submit" value="Search for Bar names">
+
+
+<select name="filter_option" onchange="this.form.submit()">
+    <option value="">Select company maker</option>
+    <% @makerc.each do |ba| %>
+      <option value="<%= ba.company_maker %>"><%= ba.company_maker%></option>
+    <% end %>
+  </select>
+</form>
 <div class="flickr_pagination">
 <%= will_paginate @chocolate_bars %>
 </div>
+
+</table>
+<ul class="cshop">
+<!-- https://github.com/mislav/will_paginate/ -->
+
 
 <div class="row">
 
@@ -24,6 +39,7 @@
               </div>
             </div>
           </div>
+
 <!-- Rails5 book -->
 <% cache @chocolate_bars do %>
 <% @chocolate_bars.each do |bar| %>
@@ -38,7 +54,7 @@
 <p><%= bar.company_maker %></p>
 <p><%= bar.review_date %></p>
 <p><%= bar.cocoa_percent %></p>
-<%= button_to 'Add to Cart', line_items_path(chocolate_bar_id: bar) %>boot
+<%= button_to 'Add to Cart', line_items_path(chocolate_bar_id: bar) %>
 </div>
 </div>
 </div>
@@ -47,8 +63,8 @@
 <% end %>
 <!-- https://github.com/mislav/will_paginate/ -->
 <!-- http://mislav.github.io/will_paginate/ -->
-
 <div class="flickr_pagination">
 <%= will_paginate @chocolate_bars %>
 </div>
+
 </ul>

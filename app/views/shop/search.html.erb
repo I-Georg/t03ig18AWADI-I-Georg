@@ -1,0 +1,17 @@
+<% if @bars%>
+<%@bars.each do |b|%>
+<%=b.bar_name%>
+<p>$<%= b.price %></p>
+<p><%= b.company_maker %></p>
+<p><%= b.review_date %></p>
+<p><%= b.cocoa_percent %></p>
+
+<%= button_to 'Add to Cart', line_items_path(chocolate_bar_id: b) %>
+<%end%>
+<%end%>
+
+<% @makerc.each do |p| %>
+      <li>
+        <%= p.company_maker %>
+      </li>
+    <% end %>
