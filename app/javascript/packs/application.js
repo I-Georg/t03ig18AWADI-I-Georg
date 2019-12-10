@@ -9,6 +9,8 @@ require("@rails/activestorage").start()
 require("channels")
 require("jquery")
 require ("leaflet")
+require("chartkick")
+require("chart.js")
 
 
 import Highcharts from "highcharts"
