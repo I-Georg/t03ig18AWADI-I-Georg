@@ -1,0 +1,10 @@
+
+
+<!--https://stackoverflow.com/questions/17449573/user-profile-pages-with-devise-routing-to-show-action -->
+<%= current_user.id %>
+Hi user, this is your email:<%= current_user.email %>
+
+<p><li><%= link_to "Profile", current_user %></li></p>
+
+<li><%= link_to "Settings", edit_user_registration_path %></li>
+<li><%= link_to "Logout", destroy_user_session_path, method: "delete" %></li>

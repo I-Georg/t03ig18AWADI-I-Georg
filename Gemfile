@@ -28,6 +28,11 @@ gem 'ransack'
 gem 'simple_form'
 #for charts https://github.com/ankane/chartkick
 gem "chartkick"
+#for authentication https://github.com/plataformatec/devise
+gem 'devise'
+#admin dashboard https://activeadmin.info/documentation.html
+gem 'activeadmin'
+
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use Active Model has_secure_password

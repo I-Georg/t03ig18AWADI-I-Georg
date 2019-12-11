@@ -4,7 +4,7 @@ include CurrentCart
 before_action :set_cart, only: [:new, :create]
 before_action :ensure_shoppingcart_not_empty, only: :new
 before_action :set_order, only: [:show, :edit, :update, :destroy]
-
+before_action :authenticate_user!
   # GET /orders
   # GET /orders.json
   def index
