@@ -1,40 +1,36 @@
 <!-- https://womanonrails.com/leaflet -->
 
 <!--https://stackoverflow.com/questions/17520177/passing-ruby-variables-to-javascript-ruby-on-rails-->
+<!--code from team Bearded unicorn I was part of for AWAD group assignment 2019,Aberdeen university,lecturer Dr. Bruce Sharlau -->
 
-  <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css" />
+<h3> We have chocolate bars from all over the world, zoom in to check if there is a chocolate bar from yours</h3>
+<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css" />
 <div id="map-holder">
 <div class="container fill">
 <div id="mapid"> </div>
 </div>
 </div>
-
 <script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
 
 <script>
 //source https://leafletjs.com/
 //https://womanonrails.com/leaflet
 
-var map = L.map('mapid').setView([51.505, -0.09],2);
-
+var map = L.map('mapid').setView([51.505, -0.09],3);
  L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
       attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>',
       maxZoom: 18
-  }).addTo(map)
+  }).addTo(map);
 
-
-
-<%@coordinate.each do |x|%>
-<%=@x=x.latitude%>
-<%=@y=x.longitude%>
-
-marker = L.marker(x,y).addTo(map);
-marker.bindPopup("<b>Hello world!</b><br>I am a popup.").openPopup();
-
+<% @chocolatebar.each do |bar|%>
+ marker<%=escape_javascript bar.id%> = L.marker([<%=escape_javascript bar.latitude%>, <%=escape_javascript bar.longitude%>]).addTo(map);
+ marker<%=escape_javascript bar.id%>.bindPopup('<p>Name: <u><%=escape_javascript bar.bar_name%></u><br />Company maker: <b><%=escape_javascript bar.company_maker%></b>');
 <%end%>
 
-
-
 </script>
-
-
+<script type="text/javascript">
+//https://stackoverflow.com/questions/6160415/reload-an-html-page-just-once-using-javascript
+   if(window.location.href.substr(-2) !== "?r") {
+      window.location = window.location.href + "?r";
+    }
+</script>

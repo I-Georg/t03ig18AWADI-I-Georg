@@ -1,6 +1,6 @@
 class MapController < ApplicationController
 def index
-@coordinate = ChocolateBar.all
+@chocolatebar = ChocolateBar.all
 #https://zaiste.net/rails_pluck_to_hash/
 #@marker = ChocolateBar.all.pluck(:latitude, :longitude).map { |latitude, longitude| { latitude: latitude, longitude: longitude } }
 #@chocolate_bar = ChocolateBar.select(:latitude)
