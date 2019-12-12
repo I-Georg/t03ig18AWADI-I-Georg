@@ -30,8 +30,7 @@ gem 'simple_form'
 gem "chartkick"
 #for authentication https://github.com/plataformatec/devise
 gem 'devise'
-#admin dashboard https://activeadmin.info/documentation.html
-gem 'activeadmin'
+
 
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
