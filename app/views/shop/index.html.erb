@@ -6,13 +6,19 @@
   <input type="submit" value="Search for Bar names">
 
 
-<select name="filter_option" onchange="this.form.submit()">
-    <option value="">Select company maker</option>
+  </select>
+
+</form>
+<form action="/search" method="GET">
+<select name="a" onchange="this.form.submit()" >
     <% @makerc.each do |ba| %>
       <option value="<%= ba.company_maker %>"><%= ba.company_maker%></option>
     <% end %>
   </select>
+<input type="submit">
 </form>
+
+
 <div class="flickr_pagination">
 <%= will_paginate @chocolate_bars %>
 </div>

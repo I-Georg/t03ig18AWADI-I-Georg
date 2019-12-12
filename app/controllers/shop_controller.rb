@@ -5,7 +5,9 @@ class ShopController < ApplicationController
  @bars = ChocolateBar.where('bar_name like ?', params[:s])
  #pagination,will_paginate gem source https://github.com/mislav/will_paginate
   @chocolate_bars = ChocolateBar.paginate(page: params[:page], per_page: 35) 
+@c= ChocolateBar.select(:company_maker), params[:a]
 @makerc = ChocolateBar.select(:company_maker)
+
 #https://www.sitepoint.com/advanced-search-ransack/
 
     # initialize_search
@@ -42,7 +44,11 @@ class ShopController < ApplicationController
   #end
 def search
  @bars = ChocolateBar.where('bar_name like ?', params[:s])
-@makerc = ChocolateBar.select(:company_maker).uniq
+@c= ChocolateBar.where('company_maker like ?', params[:a])
+@makerc = ChocolateBar.select(:company_maker)
+
+
+ 
 end
 end
 

@@ -1,11 +1,16 @@
 require 'test_helper'
 
 class OrdersControllerTest < ActionDispatch::IntegrationTest
+include Devise::Test::IntegrationHelpers
+
   setup do
     @order = orders(:one)
+
   end
 
   test "should get index" do
+
+sign_in users(:one)
     get orders_url
     assert_response :success
   end

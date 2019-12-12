@@ -1,3 +1,4 @@
+
 <% if @bars%>
 <%@bars.each do |b|%>
 <%=b.bar_name%>
@@ -10,8 +11,25 @@
 <%end%>
 <%end%>
 
-<% @makerc.each do |p| %>
-      <li>
-        <%= p.company_maker %>
-      </li>
-    <% end %>
+
+<table class="table">
+  <thead>
+ <tr>
+    <th scope="col">Chocolate Bar name</th>
+<th scope="col">Price</th>
+<th scope="col">Company maker</th>
+<th scope="col">Cacao percent</th>
+<th scope="col">Country origin</th>
+</tr>
+<% @c.each do |x|%>
+ <tr>
+<td><%=x.bar_name%><br></td>
+<td><%=x.price%><br></td>
+<td><%=x.company_maker%><br></td>
+<td><%=x.cocoa_percent%><br></td>
+<td> <%=x.country_name%><br></td>
+</tr>
+ <%end%>
+  </tbody>
+</table>
+
