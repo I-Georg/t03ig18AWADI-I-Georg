@@ -28,7 +28,9 @@
 <td><%=x.company_maker%><br></td>
 <td><%=x.cocoa_percent%><br></td>
 <td> <%=x.country_name%><br></td>
+<td><%= button_to 'Add to Cart', line_items_path(chocolate_bar_id: x) %></td>
 </tr>
+
  <%end%>
   </tbody>
 </table>
