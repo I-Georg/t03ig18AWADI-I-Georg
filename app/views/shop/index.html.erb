@@ -18,7 +18,15 @@
   </select>
 <input type="submit">
 </form>
-
+</form> <br> Filter by cocoa_percent
+<form action="/search" method="GET">
+<select name="b" onchange="this.form.submit()" >
+    <% @percent.each do |percent| %>
+      <option value="<%= percent.cocoa_percent%>"><%= percent.cocoa_percent%></option>
+    <% end %>
+  </select>
+<input type="submit">
+</form>
 
 <div class="flickr_pagination">
 <%= will_paginate @chocolate_bars %>

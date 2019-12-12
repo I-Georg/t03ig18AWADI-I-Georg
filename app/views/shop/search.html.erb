@@ -34,4 +34,25 @@
  <%end%>
   </tbody>
 </table>
+ <table class="table">
+  <thead>
+ <tr>
+    <th scope="col">Chocolate Bar name</th>
+<th scope="col">Price</th>
+<th scope="col">Company maker</th>
+<th scope="col">Cacao percent</th>
+<th scope="col">Country origin</th>
+</tr>
+<% @percents.each do |p|%>
+ <tr>
+<td><%=p.bar_name%><br></td>
+<td><%=p.price%><br></td>
+<td><%=p.company_maker%><br></td>
+<td><%=p.cocoa_percent%><br></td>
+<td> <%=p.country_name%><br></td>
+<td><%= button_to 'Add to Cart', line_items_path(chocolate_bar_id: p) %></td>
+</tr>
 
+ <%end%>
+  </tbody>
+</table>

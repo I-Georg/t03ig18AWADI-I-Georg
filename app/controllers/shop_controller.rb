@@ -7,6 +7,8 @@ class ShopController < ApplicationController
   @chocolate_bars = ChocolateBar.paginate(page: params[:page], per_page: 35) 
 @c= ChocolateBar.select(:company_maker), params[:a]
 @makerc = ChocolateBar.select(:company_maker)
+@percents= ChocolateBar.select(:cocoa_percent), params[:b]
+@percent = ChocolateBar.select(:cocoa_percent)
 
 #https://www.sitepoint.com/advanced-search-ransack/
 
@@ -46,7 +48,8 @@ def search
  @bars = ChocolateBar.where('bar_name like ?', params[:s])
 @c= ChocolateBar.where('company_maker like ?', params[:a])
 @makerc = ChocolateBar.select(:company_maker)
-
+@percents= ChocolateBar.where('cocoa_percent like ?', params[:b])
+@percent = ChocolateBar.select(:company_maker)
 
  
 end
