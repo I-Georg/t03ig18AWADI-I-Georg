@@ -14,6 +14,8 @@ get "/maps" => "map#index"
 get "/livedata" => "livefinddata#index"
 get "/search" => "shop#search"
 get "/graphcomparison" => "charts#display"
+get "/admin" => "admin#index"
+get "/admin" => "admin#destroy"
 
 
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html

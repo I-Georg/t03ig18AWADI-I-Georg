@@ -1,0 +1,19 @@
+
+<h1> Welcome ,Admin</h1>
+Here are the orders:
+
+<%@orders.each do |order|%>
+<br>Name:<b> <%=order.name%></b>
+<br>Address:<b><%=order.address%></b>
+<br>Pay type:<b><%=order.pay_type%></b>
+<%end%>
+<br><h2>Managing users:</h2>
+<%@users.each do |u|%>
+<br>Email:<b> <%=u.email%></b>
+<%= link_to 'Destroy account', admin_path, method: :get, data: { confirm: "You sure?" }, class: "btn btn-primary btn-md" %>
+
+<%end%> 
+
+
+
+<li><%= link_to "Logout", destroy_user_session_path, method: "delete" %></li>
