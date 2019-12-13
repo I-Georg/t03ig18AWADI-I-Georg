@@ -21,6 +21,10 @@ Running application locally
 	 
     Access the application using http://localhost:3000
 #Viewing it elsewhere :
+Application can be accessed at: https://quiet-forest-15652.herokuapp.com/ 
+Login details: for admin: email: admin@example.com,Password: 123456 
+For user ordinary email: user@example.com,Password: 1234567
+
 
 Ruby version
 
@@ -42,7 +46,7 @@ Rails version
 	Devise
 	Rspec
 	Brakeman
-	Acton Maibox/Active storae
+	Acton Maibox/Active storage
 	
 
     
