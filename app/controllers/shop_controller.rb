@@ -2,10 +2,15 @@ class ShopController < ApplicationController
 
   def index
   @chocolate_bars = ChocolateBar.all
- @bars = ChocolateBar.where('bar_name like ?', params[:s])
+#for running rails locally, uncomment this line)
+ #@bars = ChocolateBar.where('bar_name like ?', params[:s])
+#for postgresql
+@bars = ChocolateBar.where("cast(bar_name as text) like ?", params[:s])
  #pagination,will_paginate gem source https://github.com/mislav/will_paginate
   @chocolate_bars = ChocolateBar.paginate(page: params[:page], per_page: 35) 
+
 @c= ChocolateBar.select(:company_maker), params[:a]
+
 @makerc = ChocolateBar.select(:company_maker)
 @percents= ChocolateBar.select(:cocoa_percent), params[:b]
 @percent = ChocolateBar.select(:cocoa_percent)
@@ -46,10 +51,16 @@ class ShopController < ApplicationController
     #end
   #end
 def search
- @bars = ChocolateBar.where('bar_name like ?', params[:s])
-@c= ChocolateBar.where('company_maker like ?', params[:a])
+#uncomment for locally
+ #@bars = ChocolateBar.where('bar_name like ?', params[:s])
+@bars = ChocolateBar.where("cast(bar_name as text) like ?", params[:s])
+#uncomment for local
+@c= ChocolateBar.where("cast(company_maker as text) like ?", params[:a])
+#@c= ChocolateBar.where('company_maker like ?', params[:a])
 @makerc = ChocolateBar.select(:company_maker)
-@percents= ChocolateBar.where('cocoa_percent like ?', params[:b])
+#for local uncomment
+#@percents= ChocolateBar.where('cocoa_percent like ?', params[:b])
+@percents= ChocolateBar.where("cast(cocoa_percent as text) like ?", params[:b])
 @percent = ChocolateBar.select(:company_maker)
 
  
