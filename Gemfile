@@ -22,10 +22,7 @@ gem 'will_paginate', '~> 3.1.0'
 #for maps - https://github.com/axyjo/leaflet-rails
 gem 'leaflet-rails'
 #for fetching network data https://rapidapi.com/blog/how-to-use-an-api-with-ruby/
-gem 'excon'
 gem 'unirest'
-gem 'ransack'
-gem 'simple_form'
 #for charts https://github.com/ankane/chartkick
 gem "chartkick"
 #for authentication https://github.com/plataformatec/devise

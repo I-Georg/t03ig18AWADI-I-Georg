@@ -1,0 +1,44 @@
+This application was created as part of Advanced Web Application Development course at University of Aberdeen. A live version of the application is available at  .NOTE: accessing the app via https:// breaks the maps, use http:// instead)
+Student: Ilina Georgieva (https://github.com/I-Georg) - StudentID: 51881868
+Ruby version
+
+    2.6.4
+
+Rails version
+
+    6.0.0
+
+Packages used
+
+    ChatKick
+    jQuery
+    Leaflet
+    Bootstrap
+    Webpacker
+    Unirest
+    Will_paginate
+	Devise
+	Rspec
+	Brakeman
+	Acton Maibox/Activ storae
+	
+
+Running application locally
+
+    Run bundle install
+    Create the database: 
+	Migrate the database schema - rails db:migrate
+	 Run  rake tasks for seeding the database  -  rake chocolate_bar:seed_bars  (At the begginning - there were two tables counties and chocolate_bars but due to database error, country_names and coordinates were moved to chocolate_bars.The new table read from csv file and use Faker for generating unique names . Additonlaly there are some places where year and cocoa_percent have switched positions from csv file)
+	 rake countrycode:seed_countries  (Added additonly for purposes of live data)
+	 
+    Access the application using http://localhost:3000
+
+
+    
+    
+
+Parts that are not working correctly
+
+   
+    Maps and search required a page refresh to work correctly
+   
