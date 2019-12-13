@@ -1,5 +1,10 @@
 
 class LivefinddataController < ApplicationController
+ActionDispatch::Response.default_headers = {          
+   'X-Frame-Options' => 'SAMEORIGIN',     
+   'X-Content-Type-Options' => 'nosniff',          
+   'X-XSS-Protection' => '1;'
+}
 require 'unirest'
 def index
 @code= CountryCode.all
