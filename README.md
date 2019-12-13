@@ -32,7 +32,7 @@ Rails version
 
 #Packages used
 
-    ChatKick
+    ChartKick
     jQuery
     Leaflet
     Bootstrap
@@ -42,7 +42,7 @@ Rails version
 	Devise
 	Rspec
 	Brakeman
-	Acton Maibox/Activ storae
+	Acton Maibox/Active storae
 	
 
     
@@ -51,7 +51,7 @@ Rails version
 Parts that are not working correctly
 
    
-    Maps require a page refresh to work correctly
+    Search in Heroku needed Postgresql syntax, if the app is run locally methods should be uncommented. In Heroku you can search the word with Upercase letter only. In local it worked with lowercase too
     References 
 
 Agile Web Development with Rails 5.1
