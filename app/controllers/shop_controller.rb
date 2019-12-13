@@ -10,6 +10,7 @@ class ShopController < ApplicationController
 @percents= ChocolateBar.select(:cocoa_percent), params[:b]
 @percent = ChocolateBar.select(:cocoa_percent)
 
+
 #https://www.sitepoint.com/advanced-search-ransack/
 
     # initialize_search

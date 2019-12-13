@@ -9,9 +9,12 @@ devise_for :users
   resources :chocolate_bars
   resources :countries
 resources :users
+authenticate :user do
 get "/profile" => "user#show"
+end
 get "/maps" => "map#index"
 get "/livedata" => "livefinddata#index"
+
 get "/search" => "shop#search"
 get "/graphcomparison" => "charts#display"
 get "/admin" => "admin#index"

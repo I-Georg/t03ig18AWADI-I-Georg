@@ -1,6 +1,8 @@
-require 'unirest'
+
 class LivefinddataController < ApplicationController
+require 'unirest'
 def index
+@code= CountryCode.all
 if params[:input]
 par = 'https://countries-cities.p.rapidapi.com/location/country/' + params[:input]
 
@@ -9,7 +11,7 @@ par = 'https://countries-cities.p.rapidapi.com/location/country/' + params[:inpu
     "X-RapidAPI-Host" => "countries-cities.p.rapidapi.com",
     "X-RapidAPI-Key" => "cc8a2c4e30mshd441bd559fc47dap146ee5jsnf7e9fc26bf72"
   }
-@code = CountryCode.all
+
 end
 end
 end
