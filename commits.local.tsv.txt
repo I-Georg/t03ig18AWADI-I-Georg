@@ -1,0 +1,63 @@
+d70289c	I-Georg	Fri Dec 13 22:33:42 2019	search postgresql
+0afa0a2	I-Georg	Fri Dec 13 22:14:31 2019	updated navbar
+f61c81f	I-Georg	Fri Dec 13 21:33:31 2019	updated leaflet call
+856cf87	I-Georg	Fri Dec 13 21:22:31 2019	tile layer - new try2
+eda0fc2	I-Georg	Fri Dec 13 21:11:37 2019	tile layer - new try
+0f1103e	I-Georg	Fri Dec 13 21:04:32 2019	new tile layer maybe final
+eeb221e	I-Georg	Fri Dec 13 20:42:47 2019	new tile layer
+a4b271c	I-Georg	Fri Dec 13 20:33:37 2019	import bootstrap
+5bc2998	I-Georg	Fri Dec 13 20:29:16 2019	leaflet fix
+e14b1c4	I-Georg	Fri Dec 13 20:24:58 2019	precompiled assets
+879eaa2	I-Georg	Fri Dec 13 20:08:07 2019	leaflet1
+61f9140	I-Georg	Fri Dec 13 20:03:50 2019	leaflet
+8b608a5	I-Georg	Fri Dec 13 19:56:25 2019	bootstrap for layout
+8788135	I-Georg	Fri Dec 13 19:52:46 2019	bootstrap for heroku5
+c6f8647	I-Georg	Fri Dec 13 19:51:10 2019	bootstrap for heroku4
+d471d69	I-Georg	Fri Dec 13 19:49:07 2019	bootstrap for heroku3
+0516810	I-Georg	Fri Dec 13 19:46:29 2019	bootstrap for heroku2
+0dabb49	I-Georg	Fri Dec 13 19:43:28 2019	bootstrap for heroku
+fbe2614	I-Georg	Fri Dec 13 19:35:05 2019	method error
+48a2928	I-Georg	Fri Dec 13 18:53:31 2019	deployment
+0d44675	I-Georg	Fri Dec 13 18:30:53 2019	upgraded layot
+421d86e	I-Georg	Fri Dec 13 17:47:34 2019	fixed routes - no authenticate so to allow guest users
+e4bd206	I-Georg	Fri Dec 13 17:23:39 2019	upgraded charts
+d29fb0c	I-Georg	Fri Dec 13 16:51:48 2019	fix user login
+fbbba25	I-Georg	Fri Dec 13 16:24:08 2019	Merge branch 'master' of https://github.com/I-Georg/t03ig18AWADI-I-Georg
+afa55db	I-Georg	Fri Dec 13 16:15:45 2019	fixed stuff
+fe781ba	I-Georg	Fri Dec 13 15:54:10 2019	fixed profile
+0312f5d	I-Georg	Fri Dec 13 15:41:41 2019	rails tests added
+34f3512	I-Georg	Fri Dec 13 14:35:41 2019	rspec tests added
+3a85348	I-Georg	Fri Dec 13 09:18:23 2019	clean gemfile
+76baacd	Ilina Georgieva	Fri Dec 13 09:14:15 2019	Update readme
+c562a03	I-Georg	Fri Dec 13 08:17:17 2019	checked owasp security
+51c9ae8	I-Georg	Fri Dec 13 08:12:18 2019	livedata upgraded layout
+1755a2a	I-Georg	Fri Dec 13 08:07:36 2019	livedata not dislayed-fixed and upgraded layout
+5ba14a0	I-Georg	Fri Dec 13 00:48:08 2019	updated layot
+71f1a85	I-Georg	Fri Dec 13 00:18:18 2019	charts+ div
+30c80b0	I-Georg	Thu Dec 12 22:24:56 2019	added filter cocoa
+4b107cc	I-Georg	Thu Dec 12 22:16:05 2019	button add to cart
+0dd1156	I-Georg	Thu Dec 12 22:10:29 2019	updated search added company filter
+108f3bf	I-Georg	Thu Dec 12 16:22:37 2019	leaflet done and upgraded
+53a59b1	I-Georg	Thu Dec 12 15:51:33 2019	admin controller added+ order display+ user display+ destroy user+ logout admin+authenticate admin
+7c860de	I-Georg	Thu Dec 12 14:08:19 2019	got rid of admin users and untangled it from devise
+49c752b	I-Georg	Wed Dec 11 22:56:22 2019	installed devise, configured users,added user profile, added admin dashboard to be configured
+9c58b04	I-Georg	Tue Dec 10 16:48:16 2019	added kickcharts and displayed a chart
+a032dfa	I-Georg	Tue Dec 10 15:22:35 2019	added search and filter,filter to be continued
+4600941	I-Georg	Mon Dec 9 14:39:11 2019	displayed api,new table with country codes and search
+0486110	I-Georg	Mon Dec 9 11:41:28 2019	fixed big database issue,droped the databae,migrated new columns,seeded the data,added leaflet marker
+8fe79eb	I-Georg	Sat Dec 7 20:57:55 2019	loaded leaflet
+2c9c5e5	I-Georg	Sat Dec 7 19:51:03 2019	better home page,added bootstrap div classes for better look- now saved
+def1f32	I-Georg	Sat Dec 7 19:50:21 2019	better home page,added bootstrap div classes for better look
+7818e3b	I-Georg	Sat Dec 7 19:08:25 2019	installed will_paginated,working pagination and css
+fdb2df7	I-Georg	Sat Dec 7 18:36:10 2019	added bootstrap navbar
+559c9cd	I-Georg	Sat Dec 7 16:35:49 2019	added email service it works on console ,possibly gmail blocks it
+c5e4a67	I-Georg	Fri Dec 6 21:59:19 2019	fixed ordering eror,orders completed can be seen in database
+f1ab760	I-Georg	Fri Dec 6 19:29:32 2019	added from the book checkout,order table referncing line item,form and validation,simple payment method
+2835ae2	I-Georg	Fri Dec 6 17:37:37 2019	added total price and deletion button.slight formatting of the table
+079c104	I-Georg	Fri Dec 6 16:54:42 2019	added invalid cart and redirect
+8c920f2	I-Georg	Fri Dec 6 16:47:30 2019	made the cart smarter - added quantity
+84be834	I-Georg	Fri Dec 6 16:24:01 2019	added price to cart
+6780c14	I-Georg	Fri Dec 6 16:13:49 2019	cart working
+1b416a7	I-Georg	Sat Nov 23 13:07:11 2019	created controller shop
+cc96107	I-Georg	Fri Nov 22 15:04:01 2019	seeded data
+3ddab11	I-Georg	Tue Nov 19 16:27:34 2019	new repo
