@@ -1,15 +1,15 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  bar_name: MyText
+  bar_name: Hey
   price: 9.99
-  company_maker: MyText
-  review_date: 1
-  cocoa_percent: 1
+  company_maker: Oha
+  review_date: 12.12.2019
+  cocoa_percent: 85
 
 two:
-  bar_name: MyText
-  price: 9.99
-  company_maker: MyText
-  review_date: 1
-  cocoa_percent: 1
+  bar_name: He
+  price: 9.91
+  company_maker: Oi
+  review_date: 11.12.2019
+  cocoa_percent: 75
