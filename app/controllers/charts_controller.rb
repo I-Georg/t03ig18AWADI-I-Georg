@@ -21,5 +21,5 @@ def authenticate_admin!
   authenticate_user!
   redirect_to '/', status: :forbidden unless current_user.admin?
 end
-authenticate_admin!
+#authenticate_admin!
 end
