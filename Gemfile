@@ -27,7 +27,7 @@ gem 'unirest'
 gem "chartkick"
 #for authentication https://github.com/plataformatec/devise
 gem 'devise'
-
+gem 'leaflet-rails'
 
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
