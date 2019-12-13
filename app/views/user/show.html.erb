@@ -2,9 +2,10 @@
 
 <!--https://stackoverflow.com/questions/17449573/user-profile-pages-with-devise-routing-to-show-action -->
 <%= current_user.id %>
-Hi user, this is your email:<%= current_user.email %>
+<h2>Hi user, 
+This is your email:<b><%= current_user.email %></h2></b>
 
-<p><li><%= link_to "Profile", current_user %></li></p>
+<p><h3><li><%= link_to "Profile", current_user %></li></p></h3>
 
-<li><%= link_to "Settings", edit_user_registration_path %></li>
-<li><%= link_to "Logout", destroy_user_session_path, method: "delete" %></li>
+<p><h3><b><%= link_to "Settings", edit_user_registration_path %></li><b></p></h3>
+<p><h3><b><%= link_to "Logout", destroy_user_session_path, method: "delete" %></li></b></p></h3>

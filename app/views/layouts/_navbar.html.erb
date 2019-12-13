@@ -1,20 +1,18 @@
 <!-- https://getbootstrap.com/ -->
 <!--https://bootstrapious.com/p/bootstrap-navbar -->
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-light" style="background-color: #f2e2d0;">
   <a class="navbar-brand" href="/">Home</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+<a class="navbar-brand" href="/maps">Maps</a>
+<a class="navbar-brand" href="/search">Search</a>
+<a class="navbar-brand" href="/graphcomparison">Graphs</a>
+<a class="navbar-brand" href="/livedata">Live data</a>
+<a class="navbar-brand" href="/profile">Profile view</a>
+<a class="navbar-brand" href="/admin">Admin</a>
 
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+  
 
-         <a class="nav-link" href="/maps">Maps <span class="sr-only">(current)</span></a>
-         <a class="nav-link" href="/search">Search <span class="sr-only">(current)</span></a>
-<a class="nav-link" href="/graphcomparison">Graphs <span class="sr-only">(current)</span></a>
-<a class="nav-link" href="/livedata">Live data <span class="sr-only">(current)</span></a>
+ 
 
 <%= link_to 'Sign in',new_user_session_path, :class => 'nav-link'  %>
 

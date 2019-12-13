@@ -3,7 +3,7 @@
 
 <form action="/search" method="GET">
   <input type="text" name="s" >
-  <input type="submit" value="Search for Bar names">
+ <button type="button" class="btn btn-outline-success"><input type="submit" value="Search for Bar names"></button> 
 
 
   </select>
@@ -16,7 +16,7 @@
       <option value="<%= ba.company_maker %>"><%= ba.company_maker%></option>
     <% end %>
   </select>
-<input type="submit">
+<button type="button" class="btn btn-outline-success"><input type="submit"></button>
 </form>
 </form> <br> Filter by cocoa_percent
 <form action="/search" method="GET">
@@ -25,7 +25,7 @@
       <option value="<%= percent.cocoa_percent%>"><%= percent.cocoa_percent%></option>
     <% end %>
   </select>
-<input type="submit">
+<button type="button" class="btn btn-outline-success"><input type="submit"></button>
 </form>
 
 <div class="flickr_pagination">
@@ -39,21 +39,7 @@
 
 <div class="row">
 
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="card h-100">
-              <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-              <div class="card-body">
-                <h4 class="card-title">
-                  <a href="#">Item One</a>
-                </h4>
-                <h5>$24.99</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
-              </div>
-              <div class="card-footer">
-                <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
-              </div>
-            </div>
-          </div>
+          
 
 <!-- Rails5 book -->
 <% cache @chocolate_bars do %>
@@ -69,7 +55,7 @@
 <p><%= bar.company_maker %></p>
 <p><%= bar.review_date %></p>
 <p><%= bar.cocoa_percent %></p>
-<%= button_to 'Add to Cart', line_items_path(chocolate_bar_id: bar) %>
+<button type="button" class="btn btn-outline-success"><%= button_to 'Add to Cart', line_items_path(chocolate_bar_id: bar) %></button>
 </div>
 </div>
 </div>
