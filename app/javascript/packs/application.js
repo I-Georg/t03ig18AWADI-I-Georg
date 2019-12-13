@@ -14,6 +14,7 @@ require("chartkick")
 require("chart.js")
 
 
+
 import Highcharts from "highcharts"
 window.Highcharts = Highcharts
 //import './bootstrap_custom.js'
