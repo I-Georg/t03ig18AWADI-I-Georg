@@ -3,11 +3,11 @@
 one:
   name: alice
   address: lo
-  email: Mlo
+  email: Mlo@yahoo.com
   pay_type: 1
 
 two:
-  name: MyString
-  address: MyText
-  email: MyString
+  name: Bro
+  address: wuwhw
+  email: Ma@hjd.com
   pay_type: 1
