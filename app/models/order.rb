@@ -1,5 +1,5 @@
 class Order < ApplicationRecord
-#source Rails5 book- code taken and suited to follow needs
+#source Ruby, S. and Thomas, D., 2009. Agile web development with rails. Raleigh, NC: Pragmatic Bookshelf.- code taken and suited to follow needs as in all places where it is mentioned
 has_many :line_items, dependent: :destroy
 
 

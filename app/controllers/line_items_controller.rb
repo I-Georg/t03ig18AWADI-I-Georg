@@ -25,6 +25,7 @@ class LineItemsController < ApplicationController
 
   # POST /line_items
   # POST /line_items.json
+#Ruby, S. and Thomas, D., 2009. Agile web development with rails. Raleigh, NC: Pragmatic Bookshelf.
   def create
     #@line_item = LineItem.new(line_item_params)
     chocolate_bar = ChocolateBar.find(params[:chocolate_bar_id])

@@ -1,5 +1,5 @@
 module CurrentCart
-
+#Ruby, S. and Thomas, D., 2009. Agile web development with rails. Raleigh, NC: Pragmatic Bookshelf. source
 private
 
   def set_cart

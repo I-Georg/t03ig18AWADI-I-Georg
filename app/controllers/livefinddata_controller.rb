@@ -1,5 +1,6 @@
 
 class LivefinddataController < ApplicationController
+#https://cheatsheetseries.owasp.org/cheatsheets/Ruby_on_Rails_Cheatsheet.html
 ActionDispatch::Response.default_headers = {          
    'X-Frame-Options' => 'SAMEORIGIN',     
    'X-Content-Type-Options' => 'nosniff',          
@@ -7,6 +8,7 @@ ActionDispatch::Response.default_headers = {
 }
 require 'unirest'
 def index
+#https://rapidapi.com/blog/how-to-use-an-api-with-ruby/
 @code= CountryCode.all
 if params[:input]
 par = 'https://countries-cities.p.rapidapi.com/location/country/' + params[:input]

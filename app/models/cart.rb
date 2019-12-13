@@ -3,7 +3,7 @@ has_many :line_items, dependent: :destroy
 
 
 
-#source Rails5 book
+#Ruby, S. and Thomas, D., 2009. Agile web development with rails. Raleigh, NC: Pragmatic Bookshelf.
 def add_chocolate_bar(chocolate_bar)
 current_item = line_items.find_by(chocolate_bar_id: chocolate_bar.id)
 if current_item

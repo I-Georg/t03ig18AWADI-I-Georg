@@ -1,5 +1,6 @@
 class AdminController < ApplicationController
 include CurrentCart
+#https://stackoverflow.com/questions/40794650/devise-add-admin-role
 def index
 @orders = Order.all
 @users = User.all

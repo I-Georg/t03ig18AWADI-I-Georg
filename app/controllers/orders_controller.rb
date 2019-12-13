@@ -28,7 +28,7 @@ before_action :authenticate_user!
   # POST /orders
   # POST /orders.json
   def create
-#source Rails5 book
+#source Ruby, S. and Thomas, D., 2009. Agile web development with rails. Raleigh, NC: Pragmatic Bookshelf.
     @order = Order.new(order_params)
     @order.add_line_items_from_shoppingcart(@cart)
     #@cart = Cart.find(:id)
