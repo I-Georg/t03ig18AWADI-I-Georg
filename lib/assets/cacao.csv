@@ -22,23 +22,23 @@ A. Morin,Chanchamayo ,1019,2013,70%,France,3.5,В ,Peru,Bangladesh,24,90
 A. Morin,Chanchamayo Pro,1019,2013,63%,France,4,В ,Peru,Belgium,50.83,4
 A. Morin,Bolivie,797,2012,70%,France,3.5,В ,Bolivia,Burkina Faso,13,-2
 A. Morin,Peruu,797,2012,63%,France,3.75,В ,Peru,Bulgaria,43,25
-Acalli,Chulucanas, El Platanal,1462,2015,70%,U.S.A.,3.75,В ,Peru,Bahrain,26,50.55
-Acalli,Tumbes, Norandino,1470,2015,70%,U.S.A.,3.75,Criollo,Peru,Burundi,-3.5,30
+Acalli,Chulucanas, El Platanal,1462,70%,U.S.A.,3.75,В ,Peru,Bahrain,26,50.55
+Acalli,Tumbes, Norandino,1470,70%,U.S.A.,3.75,Criollo,Peru,Burundi,-3.5,30
 Adi,Vanua Levu,705,2011,60%,Fiji,2.75,Trinitario,Fiji,Benin,9.5,2.25
-Adi,Vanuae Levu, Toto-A,705,2011,80%,Fiji,3.25,Trinitario,Fiji,Bermuda,32.33,-64.75
+Adi,Vanuae Levu, Toto-A,705,80%,Fiji,3.25,Trinitario,Fiji,Bermuda,32.33,-64.75
 Adi,Vany Levu,705,2011,88%,Fiji,3.5,Trinitario,Fiji,Brunei Darussalam,4.5,114.67
-Adi, Levu, Ami-Ami-CA,705,2011,72%,Fiji,3.5,Trinitario,Fiji,Bolivia,-17,-65
+Adi, Levu, Ami-Ami-CA,705,72%,Fiji,3.5,Trinitario,Fiji,Bolivia,-17,-65
 Aequare (Gianduja),Los Rios,370,2009,55%,Ecuador,2.75,Forastero (Arriba),Ecuador,Brazil,-10,-55
 Aequare (Gianduja), Quevedo,370,2009,70%,Ecuador,3,Forastero (Arriba),Ecuador,Bahamas,24.25,-76
 Ah Cacao,Tabasco,316,2009,70%,Mexico,3,Criollo,Mexico,Bhutan,27.5,90.5
-Akesson's (Pralus),Bali (west), Sukrama Family,636,2011,75%,Switzerland,3.75,Trinitario,Indonesia,Bouvet Island,-54.43,3.4
-Akesson's (Pralus),Madagascar, Ambolikapiky P.,502,2010,75%,Switzerland,2.75,Criollo,Madagascar,Botswana,-22,24
-Akesson's (Pralus),Monte Alegre, D. Badero,508,2010,75%,Switzerland,2.75,Forastero,Brazil,Belarus,53,28
+Akesson's (Pralus),Bali (west), Sukrama Family,636,75%,Switzerland,3.75,Trinitario,Indonesia,Bouvet Island,-54.43,3.4
+Akesson's (Pralus),Madagascar, Ambolikapiky P.,502,75%,Switzerland,2.75,Criollo,Madagascar,Botswana,-22,24
+Akesson's (Pralus),Monte Alegre, D. Badero,508,75%,Switzerland,2.75,Forastero,Brazil,Belarus,53,28
 Alain Ducasse,Trinite,1215,2014,65%,France,2.75,Trinitario,Trinidad,Belize,17.25,-88.75
 Alain Ducasse,Viet,1215,2014,75%,France,2.75,Trinitario,Vietnam,Canada,60,-95
 Alain Ducasse,Madaga,1215,2014,75%,France,3,Trinitario,Madagascar,Cocos (Keeling) Islands,-12.5,96.83
 Alain Ducasse,Chuao,1061,2013,75%,France,2.5,Trinitario,Venezuela,Congo, The Democratic Republic of the,0,25
-Alain Ducasse,Piura, Perou,1173,2013,75%,France,2.5,В ,Peru,Central African Republic,7,21
+Alain Ducasse,Piura, Perou,1173,75%,France,2.5,В ,Peru,Central African Republic,7,21
 Alexandre,Winak Coop, Napo,1944,2017,70%,Netherlands,3.5,Forastero (Nacional),Ecuador,Congo,-1,15
 Alexandre,La Dalia, Matagalpa,1944,2017,70%,Netherlands,3.5,Criollo, Trinitario,Nicaragua,Switzerland,47,8
 Alexandre,Tien Giang,1944,2017,70%,Netherlands,3.5,Trinitario,Vietnam,Cote d'Ivoire,8,-5
@@ -58,7 +58,7 @@ Amano,Dos Rios,470,2010,70%,U.S.A.,3.75,В ,Dominican Republic,Djibouti,11.5,43
 Amano,Guayas,470,2010,70%,Una,4,В ,Ecuador,Denmark,56,10
 Amano,Chuao,544,2010,70%,Ulle,3,Trinitario,Venezuela,Dominica,15.42,-61.33
 Amano,Montanya,363,2009,70%,Ualla.,3,В ,Venezuela,Dominican Republic,19,-70.67
-Amano,Bali, Jembrana,304,2008,70%,Ulol.,2.75,В ,Indonesia,Algeria,28,3
+Amano,Bali, Jembrana,2008,70%,Ulol.,2.75,В ,Indonesia,Algeria,28,3
 Amano,Madagascar,129,2007,70%,Uwwo,3.5,Trinitario,Madagascar,Ecuador,-2,-77.5
 Amano,Cuyagua,147,2007,70%,Urro,3,В ,Venezuela,Estonia,59,26
 Amano,Ocumare,175,2007,70%,Undo.,3.75,Criollo,Venezuela,Egypt,27,30
@@ -66,7 +66,7 @@ Amatller (Simon Coll),Ghan,322,2009,70%,Spain,3,Forastero,Ghana,Western Sahara,2
 Amatller (Simon Coll),Acuador,327,2009,70%,Spain,2.75,В ,Ecuador,Eritrea,15,39
 Amatller (Simon Coll),Ecuador,464,2009,85%,Spain,2.75,В ,Ecuador,Spain,40,-4
 Amatller (Simon Coll),Hana,464,2009,85%,Spain,3,Forastero,Ghana,Ethiopia,8,38
-Amazona,LamasdelChanka, San Martin,1145,2013,72%,Peru,3.25,В ,Peru,Europe,47,8
+Amazona,LamasdelChanka, San Martin,1145,72%,Peru,3.25,В ,Peru,Europe,47,8
 Amazona,Bellavista Gran Pajeten,1145,2013,73%,Peru,3.5,Trinitario,Peru,Finland,64,26
 Ambrosia,Beliz,1494,2015,64%,Canada,3,Trinitario,Belize,Fiji,-18,175
 Ambrosia,Mscar,1494,2015,66%,Canada,3.25,Trinitario,Madagascar,Falkland Islands (Malvinas),-51.75,-59
@@ -74,7 +74,7 @@ Ambrosia,Dominicano,1498,2015,75%,Canada,3.25,В ,Dominican Republic,Micronesia
 Ambrosia, Guinea,1498,2015,63%,Canada,3.25,В ,Papua New Guinea,Faroe Islands,62,-7
 Ambrosia,Venezi,1498,2015,70%,Canada,3.25,В ,Venezuela,France,46,2
 Ambrosia,PerYu,1498,2015,68%,Canada,3.5,В ,Peru,Gabon,-1,11.75
-Amedei,Piura, Blanco de Criollo,979,2012,70%,Italy,3.75,В ,Peru,United Kingdom,54,-2
+Amedei,Piura, Blanco de Criollo,2012,70%,Italy,3.75,В ,Peru,United Kingdom,54,-2
 Amedei,Porcelana,111,2007,70%,Italy,4,Criollo (Porcelana),Venezuela,Grenada,12.12,-61.67
 Amedei,Nine,111,2007,75%,Italy,4,Blend,В ,Georgia,42,43.5
 Amedei,Chuao,111,2007,70%,Italy,5,Trinitario,Venezuela,French Guiana,4,-53
@@ -90,8 +90,8 @@ Amedei,Toscano P,75,2006,66%,Italy,4,Blend,В ,South Georgia and the South Sand
 AMMA,Catongo,1065,2013,75%,Brazil,3.25,Forastero (Catongo),Brazil,Guatemala,15.5,-90.25
 AMMA,Monte Alegre,572,2010,85%,Brazil,2.75,Forastero (Parazinho),Brazil,Guam,13.47,144.78
 AMMA,Monte Alegria,572,2010,50%,Brazil,3.75,Forastero (Parazinho),Brazil,Guinea-Bissau,12,-15
-AMMA,Monte Alegros, 3 diff. plantations,572,2010,75%,Brazil,3.75,Forastero (Parazinho),Brazil,Guyana,5,-59
-AMMA,Monte Al, 3 diff. plantations,572,2010,60%,Brazil,4,Forastero (Parazinho),Brazil,Hong Kong,22.25,114.17
+AMMA,Monte Alegros, 3 diff. plantations,2010,75%,Brazil,3.75,Forastero (Parazinho),Brazil,Guyana,5,-59
+AMMA,Monte Al, 3 diff. plantations,2010,60%,Brazil,4,Forastero (Parazinho),Brazil,Hong Kong,22.25,114.17
 Anahata,Elvesia,1259,2014,75%,U.S.A.,3,В ,Dominican Republic,Heard Island and McDonald Islands,-53.1,72.52
 Animas,Alto Beni,1852,2016,75%,U.S.A.,3.5,В ,Bolivia,Honduras,15,-86.5
 Ara,MadT,1375,2014,75%,France,3,Trinitario,Madagascar,Croatia,45.17,15.5
@@ -105,7 +105,7 @@ Arete,Hacienda Victoria,1904,2016,70%,U.S.A.,3.25,В ,Ecuador,British Indian Oc
 Arete,Costa Esmeraldas,1904,2016,70%,U.S.A.,3.25,В ,Ecuador,Iraq,33,44
 Arete,Lachua,1904,2016,70%,U.S.A.,3.5,В ,Guatemala,Iran, Islamic Republic of,32,53
 Arete,Rugoso,1904,2016,70%,U.S.A.,3.75,В ,Nicaragua,Iceland,65,-18
-Arete,La Masica, FHIA,1908,2016,70%,U.S.A.,3.5,В ,Honduras,Italy,42.83,12.83
+Arete,La Masica, FHIA,1908,70%,U.S.A.,3.5,В ,Honduras,Italy,42.83,12.83
 Arete,Coto Brus,1908,2016,70%,U.S.A.,4,В ,Costa Rica,Jamaica,18.25,-77.5
 Arete,Phantom,1924,2016,70%,U.S.A.,4,Forastero (Nacional),Peru,Jordan,31,36
 Arete,Elvesia,1928,2016,70%,U.S.A.,3.75,В ,Dominican Republic,Japan,36,138
@@ -120,7 +120,7 @@ Arete,Chuno,1598,2015,70%,U.S.A.,4,Criollo, Trinitario,Nicaragua,Korea, Republic
 Arete,Fazenda Camboa,1602,2015,75%,U.S.A.,2.75,В ,Brazil,Kuwait,29.34,47.66
 Arete,Guatemala,1602,2015,70%,U.S.A.,3.25,В ,Guatemala,Cayman Islands,19.5,-80.5
 Arete,Camino Verde,1602,2015,75%,U.S.A.,3.5,В ,Ecuador,Kazakhstan,48,68
-Artisan du Chocolat,Trinidad, Heritage, Limited ed.,1193,2013,72%,U.K.,3.25,Trinitario,Trinidad,Lao People's Democratic Republic,18,105
+Artisan du Chocolat,Trinidad, Heritage, Limited ed.,2013,72%,U.K.,3.25,Trinitario,Trinidad,Lao People's Democratic Republic,18,105
 Artisan du Chocolat,Casa Luker,947,2012,72%,U.K.,3.75,В ,Colombia,Lebanon,33.83,35.83
 Artisan du Chocolat,Hayti,729,2011,72%,U.K.,4,В ,Haiti,Saint Lucia,13.88,-61.13
 Artisan du Chocolat,Panam,745,2011,72%,U.K.,2.75,В ,Panama,Liechtenstein,47.17,9.53
@@ -148,8 +148,8 @@ Bahen & Co., New Guinea,1474,2015,70%,Australia,3.5,В ,Papua New Guinea,Maurit
 Bahen & Co.,Sambirano,995,2012,70%,Australia,3,Trinitario,Madagascar,Montserrat,16.75,-62.2
 Bahen & Co.,Bahia,999,2012,70%,Australia,2.5,В ,Brazil,Malta,35.83,14.58
 Bahen & Co.,Houseblend,999,2012,70%,Australia,2.5,Blend,В ,Mauritius,-20.28,57.55
-Bakau,Bambamarca, 2015,1454,2015,70%,Peru,2.75,В ,Peru,Maldives,3.25,73
-Bakau,Huallabamba, 2015,1454,2015,70%,Peru,3.5,В ,Peru,Malawi,-13.5,34
+Bakau,Bambamarca, 2015,2015,70%,Peru,2.75,В ,Peru,Maldives,3.25,73
+Bakau,Huallabamba, 2015,2015,70%,Peru,3.5,В ,Peru,Malawi,-13.5,34
 Bar Au Chocolat,Bahia,1554,2015,70%,U.S.A.,3.5,В ,Brazil,Mexico,23,-102
 Bar Au Chocolat,Maranon Canyon,1295,2014,70%,U.S.A.,4,Forastero (Nacional),Peru,Malaysia,2.5,112.5
 Bar Au Chocolat,Duarte Province,983,2012,70%,U.S.A.,3.25,В ,Dominican Republic,Mozambique,-18.25,35
@@ -163,7 +163,7 @@ Beau Cacao,Asajaya E, NW Borneo, ,1948,2017,73%,U.K.,3,В ,Malaysia,Netherlands
 Beau Cacao,Serian E., NW Borneo, ,1948,2017,72%,U.K.,3.25,В ,Malaysia,Norway,62,10
 Beehive,BorraB,1784,2016,80%,U.S.A.,2.75,В ,Brazil,Nepal,28,84
 Beehive,Domine,1784,2016,70%,U.S.A.,2.75,В ,Domincan Republic,Nauru,-0.53,166.92
-Beehive,Equator, Batch 31516,1784,2016,70%,U.S.A.,2.75,В ,Ecuador,Niue,-19.03,-169.87
+Beehive,Equator, Batch 31516,2016,70%,U.S.A.,2.75,В ,Ecuador,Niue,-19.03,-169.87
 Beehive,Ellevi,1788,2016,90%,U.S.A.,2.75,В ,Ecuador,New Zealand,-41,174
 Belcolade, Rica,586,2010,64%,Belgium,2.75,В ,Costa Rica,Oman,21,57
 Belcolade, Guinea,586,2010,64%,Belgium,2.75,В ,Papua New Guinea,Panama,9,-80
@@ -172,7 +172,7 @@ Belcolade,Ecia,586,2010,71%,Belgium,3.5,В ,Ecuador,French Polynesia,-15,-140
 Bellflower,Kakao Kamili,1800,2016,70%,U.S.A.,3.5,Criollo, Trinitario,Tanzania,Papua New Guinea,-6,147
 Bellflower,Alto Beni,1804,2016,70%,U.S.A.,3.25,В ,Bolivia,Philippines,13,122
 Bellflower,Oko Caribe.,1864,2016,70%,U.S.A.,3.5,В ,Domincan Republic,Pakistan,30,70
-Belyzium,Belize Blanco, low fermentation,1768,2016,83%,Germany,2.75,Trinitario,Belize,Poland,52,20
+Belyzium,Belize Blanco, low fermentation,1768,83%,Germany,2.75,Trinitario,Belize,Poland,52,20
 Belyzium,Belize Palos,1768,2016,78%,Germany,3,Trinitario,Belize,Saint Pierre and Miquelon,46.83,-56.33
 Belyzium,Belize south,1768,2016,83%,Germany,3.5,Trinitario,Belize,Puerto Rico,18.25,-66.5
 Benoit Nihant,Baracoa,1141,2013,74%,Belgium,3.5,Trinitario,Cuba,Palestinian Territory,32,35.25
@@ -180,26 +180,26 @@ Benoit Nihant,Chuao,1141,2013,74%,Belgium,3.5,Criollo,Venezuela,Portugal,39.5,-8
 Benoit Nihant,Cuyagua Village,1141,2013,74%,Belgium,3.5,Criollo,Venezuela,Palau,7.5,134.5
 Benoit Nihant,Rio Peripa H.,1141,2013,73%,Belgium,4,Trinitario,Ecuador,Paraguay,-23,-58
 Benoit Nihant,Bali, Sukrama Bros. Farm, Melaya, 62hr C,757,2011,72%,Belgium,4,Trinitario,Indonesia,Qatar,25.5,51.25
-Benoit Nihant,Somia Plantation, Sambirano, 70hr C,773,2011,72%,Belgium,3.75,Trinitario,Madagascar,Reunion,-21.1,55.6
+Benoit Nihant,Somia Plantation, Sambirano, 70hr C,2011,72%,Belgium,3.75,Trinitario,Madagascar,Reunion,-21.1,55.6
 Bernachon,Nature,797,2012,55%,France,2.75,В ,В ,Romania,46,25
 Beschle (Felchlin),Morcar,636,2011,64%,Switzerland,3,Trinitario,Madagascar,Serbia,44,21
 Beschle (Felchlin),Maracaibo,636,2011,88%,Switzerland,3,Criollo,Venezuela,Russian Federation,60,100
-Beschle (Felchlin),Indigena Amazonia, ,636,2011,72%,Switzerland,3.5,В ,Venezuela,Rwanda,-2,30
+Beschle (Felchlin),Indigena Amazonia, 2011,72%,Switzerland,3.5,В ,Venezuela,Rwanda,-2,30
 Beschle (Felchlin),Quizas,636,2011,72%,Switzerland,4,В ,Ecuador,Saudi Arabia,25,45
 Beschle (Felchlin),Carenero S.,508,2010,70%,Switzerland,3.25,Trinitario,Venezuela,Solomon Islands,-8,159
 Beschle (Felchlin),Porcelana,508,2010,74%,Switzerland,3.25,Criollo (Porcelana),Venezuela,Seychelles,-4.58,55.67
 Beschle (Felchlin), Grand Cru,508,2010,64%,Switzerland,3.5,В ,Indonesia,Sudan,15,30
 Beschle (Felchlin),Ocumare,508,2010,72%,Switzerland,3.5,В ,Venezuela,Sweden,62,15
 Bisou,Nicaragua, American style,1482,2015,76%,U.S.A.,2.5,В ,Nicaragua,Singapore,1.37,103.8
-Bisou,San Andres, American style,1486,2015,76%,U.S.A.,2.5,В ,Costa Rica,Saint Helena,-15.93,-5.7
-Bisou,San Andres, silk,1486,2015,78%,U.S.A.,2.5,В ,Costa Rica,Slovenia,46,15
+Bisou,San Andres, American style,2015,76%,U.S.A.,2.5,В ,Costa Rica,Saint Helena,-15.93,-5.7
+Bisou,San Andres, silk,2015,78%,U.S.A.,2.5,В ,Costa Rica,Slovenia,46,15
 Bisou,Belize,1486,2015,86%,U.S.A.,3.25,Trinitario,Belize,Svalbard and Jan Mayen,78,20
 Bittersweet Origins, Barlovento,963,2012,72%,U.S.A.,3.5,Forastero,Ghana,Slovakia,48.67,19.5
-Bittersweet Origins,Bali, Singaraja,478,2010,75%,U.S.A.,3.25,В ,Indonesia,Sierra Leone,8.5,-11.5
+Bittersweet Origins,Bali, Singaraja,2010,75%,U.S.A.,3.25,В ,Indonesia,Sierra Leone,8.5,-11.5
 Bittersweet Origins,2009 Hapa Nibby,502,2010,70%,U.S.A.,3.75,Blend,Dominican Rep., Bali,San Marino,43.77,12.42
 Bittersweet Origins, Singaraja,558,2010,65%,U.S.A.,2.75,В ,Indonesia,Senegal,14,-14
-Bittersweet Origins,Sambirano, 2009,565,2010,70%,U.S.A.,3,Trinitario,Madagascar,Somalia,10,49
-Bittersweet Origins,Ocumare, prototype,565,2010,78%,U.S.A.,3,Criollo,Venezuela,Suriname,4,-56
+Bittersweet Origins,Sambirano, 2009,2010,70%,U.S.A.,3,Trinitario,Madagascar,Somalia,10,49
+Bittersweet Origins,Ocumare, prototype,2010,78%,U.S.A.,3,Criollo,Venezuela,Suriname,4,-56
 Bittersweet Origins,Puerto Plata 1,414,2009,75%,U.S.A.,3,В ,Dominican Republic,Sao Tome and Principe,1,7
 Bittersweet Origins,Puerto Plata,414,2009,65%,U.S.A.,3.5,В ,Dominican Republic,El Salvador,13.83,-88.92
 Bittersweet Origins,Sambirano Uno,423,2009,75%,U.S.A.,3.25,Trinitario,Madagascar,Syrian Arab Republic,35,38
@@ -212,7 +212,7 @@ Black Mountain,La Red,256,2008,70%,U.S.A.,2.75,В ,Dominican Republic,Thailand,
 Black Mountain,Carenero Superior,256,2008,70%,U.S.A.,2.75,Trinitario,Venezuela,Tajikistan,39,71
 Black Mountain,Matiguas,256,2008,70%,U.S.A.,3,В ,Nicaragua,Tokelau,-9,-172
 Black River (A. Morin),Blue Mountain Region,1331,2014,70%,U.K.,2.75,Trinitario,Jamaica,Turkmenistan,40,60
-Blanxart,Congo, Grand Cru,1046,2013,82%,Spain,3.5,Forastero,Congo,Tunisia,34,9
+Blanxart,Congo, Grand Cru,2013,82%,Spain,3.5,Forastero,Congo,Tunisia,34,9
 Blanxart,Organic Dark,322,2009,72%,Spain,2.75,В ,В ,Tonga,-20,-175
 Blue Bandana,Akesson's E.,1740,2016,82%,U.S.A.,3.5,Trinitario,Madagascar,Turkey,39,35
 Blue Bandana,Lachua,1752,2016,75%,U.S.A.,2.75,В ,Guatemala,Trinidad and Tobago,11,-61
@@ -222,7 +222,7 @@ Blue Bandana,Guatemala,911,2012,70%,U.S.A.,3.5,В ,Guatemala,Tanzania, United R
 Blue Bandana,Bello,911,2012,70%,U.S.A.,3.75,Trinitario,Madagascar,Ukraine,49,32
 Bonnat,Selva Maya,1912,2016,75%,France,3.5,В ,Mexico,Uganda,1,32
 Bonnat,Kaori,1339,2014,75%,France,4,В ,Brazil,United States Minor Outlying Islands,19.28,166.6
-Bonnat,Los Colorados, Santo Domingo, Equateur,1418,2014,75%,France,3.25,В ,Dominican Republic,United States,38,-97
+Bonnat,Los Colorados, Santo Domingo, Equateur,2014,75%,France,3.25,В ,Dominican Republic,United States,38,-97
 Bonnat,Surfin,1418,2014,65%,France,3.75,В ,Venez,Africa,Brasil,Peru,Mex,Uruguay,-33,-56
 Bonnat,Maragnam,1038,2013,75%,France,3.5,В ,Brazil,Uzbekistan,41,64
 Bonnat,Gabon,1042,2013,75%,France,3.25,В ,Gabon,Holy See (Vatican City State),41.9,12.45
@@ -676,12 +676,12 @@ French Broad,Palo Blanco, Chulucanas,883,2012,61%,U.S.A.,3.5,В ,Peru,Slovakia,
 French Broad,Palo Blanco w/ panela, Chulucanas,887,2012,81%,U.S.A.,2,В ,Peru,Sierra Leone,8.5,-11.5
 French Broad,Maranon Canyon, Fortunato No. 4,781,2011,70%,U.S.A.,3.5,Forastero (Nacional),Peru,San Marino,43.77,12.42
 French Broad,La Red,785,2011,65%,U.S.A.,3.5,В ,Dominican Republic,Senegal,14,-14
-Fresco,Maranon, #228, MR, SC,1383,2014,70%,U.S.A.,3,Forastero (Nacional),Peru,Somalia,10,49
-Fresco,Maranon, #227, LR, MC,1383,2014,70%,U.S.A.,3.5,Forastero (Nacional),Peru,Suriname,4,-56
-Fresco,Maranon, #229, MR, LC,1383,2014,70%,U.S.A.,3.5,Forastero (Nacional),Peru,Sao Tome and Principe,1,7
-Fresco,Maranon, #230, DR, LC,1387,2014,70%,U.S.A.,3.5,Forastero (Nacional),Peru,El Salvador,13.83,-88.92
-Fresco,Conacado, #223, MR, SC,1030,2013,72%,U.S.A.,3.25,В ,Dominican Republic,Syrian Arab Republic,35,38
-Fresco,Conacado, #224, MR, MC,1081,2013,72%,U.S.A.,3.75,В ,Dominican Republic,Swaziland,-26.5,31.5
+Fresco,Maranon, #228, 2014,70%,U.S.A.,3,Forastero (Nacional),Peru,Somalia,10,49
+Fresco,Maranon, #227, 2014,70%,U.S.A.,3.5,Forastero (Nacional),Peru,Suriname,4,-56
+Fresco,Maranon, #229, 2014,70%,U.S.A.,3.5,Forastero (Nacional),Peru,Sao Tome and Principe,1,7
+Fresco,Maranon, #230, 2014,70%,U.S.A.,3.5,Forastero (Nacional),Peru,El Salvador,13.83,-88.92
+Fresco,Conacado, #223, 2013,72%,U.S.A.,3.25,В ,Dominican Republic,Syrian Arab Republic,35,38
+Fresco,Conacado, #224, 2013,72%,U.S.A.,3.75,В ,Dominican Republic,Swaziland,-26.5,31.5
 Fresco,San Martin, Bellavista Coop, #226, DR, MC,1117,2013,70%,U.S.A.,3.75,В ,Peru,Turks and Caicos Islands,21.75,-71.58
 Fresco,Bellavista Coop, #225, LR, MC, CG Exclusive,1149,2013,70%,U.S.A.,4,Trinitario,Peru,Chad,15,19
 Fresco,Markham Valley, #219, LR, MC,899,2012,69%,U.S.A.,3.5,В ,Papua New Guinea,French Southern Territories,-43,67

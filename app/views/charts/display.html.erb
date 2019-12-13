@@ -1,2 +1,20 @@
+<h1>Interesting graphs</h1>
+<h2>Company maker</h2>
+<%= bar_chart ChocolateBar.group(:company_maker).count,{ width: "900px", height: "600px", download: true} %>
+<br>
+<h2>Country of origin</h2>
+<%= line_chart ChocolateBar.group(:country_name).count,{ width: "900px", height: "600px", download: true}  %> 
+<br>
+<h2>Cocoa percent</h2>
+<%= column_chart ChocolateBar.group(:cocoa_percent).count, { width: "900x", height: "600px",colors: ["#b00", "#666"], download: true}  %> 
 
-<%= bar_chart ChocolateBar.group(:company_maker).count,{ width: "800px", height: "500px", download: true} %>
+<div class="ui container">
+    <h1> Chocolate Bar names</h1>
+    <div class="ui divider"></div>
+      <%= column_chart @datacontroller, stacked: true %>
+      
+</div>
+
+<%=authenticate_admin!%>
+<h2>Order</h2>
+<%= column_chart Order.group(:pay_type).count, { width: "900x", height: "600px",colors: ["#b00", "#666"], download: true}  %> 
