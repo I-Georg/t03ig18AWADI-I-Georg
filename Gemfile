@@ -20,7 +20,7 @@ gem 'jbuilder', '~> 2.7'
 #gem for paginating - source https://github.com/mislav/will_paginate
 gem 'will_paginate', '~> 3.1.0'
 #for maps - https://github.com/axyjo/leaflet-rails
-gem 'leaflet-rails'
+
 #for fetching network data https://rapidapi.com/blog/how-to-use-an-api-with-ruby/
 gem 'unirest'
 #for charts https://github.com/ankane/chartkick

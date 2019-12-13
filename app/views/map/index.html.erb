@@ -17,12 +17,11 @@
 //https://womanonrails.com/leaflet
 
 var xmap = L.map('mapid').setView([51.505, -0.09],3);
- L.tileLayer('http://tile.stamen.com/toner/{z}/{x}/{y}.png', {
-      attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>.',
+  
+L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+      attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>',
       maxZoom: 18
   }).addTo(xmap);
-  
-
 <% @chocolatebar.each do |bar|%>
  marker<%=escape_javascript bar.id%> = L.marker([<%=escape_javascript bar.latitude%>, <%=escape_javascript bar.longitude%>]).addTo(xmap);
  marker<%=escape_javascript bar.id%>.bindPopup('<p>Name: <u><%=escape_javascript bar.bar_name%></u><br />Company maker: <b><%=escape_javascript bar.company_maker%></b><br /> <%=escape_javascript link_to 'Add to cart', controller: 'line_items', action: 'create', method: 'post', id: bar.id%>');
