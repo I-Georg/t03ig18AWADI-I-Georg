@@ -46,15 +46,15 @@
 <% @chocolate_bars.each do |bar| %>
 <% cache bar do %>
 <!-- source idea https://github.com/BlackrockDigital/startbootstrap-shop-homepage/blob/master/index.html -->
-<div class="col-lg-4 col-md-6 mb-4">
-<div class="card h-45">
-<div class="card-body">
-<h4 class="card-title"> </h4>
-<h3><%= bar.bar_name %></h3>
-<p>$<%= bar.price %></p>
-<p><%= bar.company_maker %></p>
-<p><%= bar.review_date %></p>
-<p><%= bar.cocoa_percent %></p>
+<div class="col-lg-4 col-md-6 mb-4" >
+<div class="card h-45"style=" border-color:#f2e2d0; border-style: solid;" >
+<div class="card-body" >
+<h4 class="card-title" > </h4>
+<h3>Name:<%= bar.bar_name %></h3>
+<p>Price: £<%= bar.price %></p>
+<p>Company maker: <%= bar.company_maker %></p>
+<p>Review date: <%= bar.review_date %></p>
+<p>Cocoa Percent: <%= bar.cocoa_percent %></p>
 <button type="button" class="btn btn-outline-success"><%= button_to 'Add to Cart', line_items_path(chocolate_bar_id: bar) %></button>
 </div>
 </div>
