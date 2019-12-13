@@ -22,7 +22,7 @@ get "/search" => "shop#search"
 get "/graphcomparison" => "charts#display"
 #if :user
 get "/admin" => "admin#index"
-get "/admin" => "admin#destroy"
+get "/admin/destroy" => "admin#destroy"
 #end
 
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
