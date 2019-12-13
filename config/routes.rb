@@ -2,9 +2,12 @@ Rails.application.routes.draw do
   #devise_for :users
 devise_for :users
 
-  resources :orders
+ 
+#authenticate :user do
   resources :line_items
   resources :carts
+ resources :orders
+#end
   root 'shop#index', as: 'shop_index'
   resources :chocolate_bars
   resources :countries
