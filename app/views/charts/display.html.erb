@@ -1,4 +1,4 @@
-<h1>Interesting graphs</h1>
+<h1>Interesting graphs. Here you can see some interesting geraphs about our shop - like an interesting comparison showing prices for different chocolate bars</h1>
 <h2>Company maker</h2>
 <%= bar_chart ChocolateBar.group(:company_maker).count,{ width: "900px", height: "600px", download: true} %>
 <br>
@@ -8,13 +8,12 @@
 <h2>Cocoa percent</h2>
 <%= column_chart ChocolateBar.group(:cocoa_percent).count, { width: "900x", height: "600px",colors: ["#b00", "#666"], download: true}  %> 
 
-<div class="ui container">
-    <h1> Chocolate Bar names</h1>
-    <div class="ui divider"></div>
-      <%= column_chart @datacontroller, stacked: true %>
-      
-</div>
+<h2> Comparison Chocolate Bar and Price for them </h2>
+<%= area_chart ChocolateBar.group(:bar_name).sum(:price) ,{ download: true}%>
 
-<%=authenticate_admin!%>
+
+
+<%if current_user.admin == true%>
 <h2>Order</h2>
 <%= column_chart Order.group(:pay_type).count, { width: "900x", height: "600px",colors: ["#b00", "#666"], download: true}  %> 
+<%end%>

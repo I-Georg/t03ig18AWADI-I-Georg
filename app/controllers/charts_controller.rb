@@ -6,20 +6,20 @@ def display
 @datacontroller= [
   {
      name: "Bar_name",
-     data: ChocolateBar.select(:bar_name).count
+     data: ChocolateBar.group(:bar_name).count
   },
   {
-     name: "Company_maker",
-     data: ChocolateBar.where(cocoa_percent: 30).count
+     name: "Cocoa percent",
+     data: ChocolateBar.group(:cocoa_percent).count
   },
   
 ]
-authenticate_admin!
+
 end
 #https://stackoverflow.com/questions/40794650/devise-add-admin-role
 def authenticate_admin!
   authenticate_user!
   redirect_to '/', status: :forbidden unless current_user.admin?
 end
-
+authenticate_admin!
 end
